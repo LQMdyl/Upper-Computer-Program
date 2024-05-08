@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigureForm</class>
+ <widget class="QWidget" name="ConfigureForm">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>华文中宋</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>系统配置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.ico</normaloff>logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="pbSave">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>540</y>
+     <width>541</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 144, 144);</string>
+   </property>
+   <property name="text">
+    <string>保 存</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>521</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+    </font>
+   </property>
+   <property name="title">
+    <string>基本设置</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>501</width>
+      <height>418</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文中宋</family>
+     </font>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>项目：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="leDataPath">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="leLogPath">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>秒</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="leWaitTime">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>单位：秒</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="lb_hostport">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>端口：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>条码长度：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="cbUpload">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>联网模式</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cbCheckSn">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>条码检测</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cbAutoScan">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>自动扫码</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>小时</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="leip1">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhNone</set>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="leip2">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="leip3">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="leip4">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>治具编号：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lbDelay">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>超时时长：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pbDataPath">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>选择路径</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>料号：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QDateTimeEdit" name="dteCheckTime">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="displayFormat">
+        <string>yyyy-M-d H:mm:ss</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLineEdit" name="lePartNumber">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLineEdit" name="leFixtureId">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLineEdit" name="leBarcodeLenth">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="leDelay">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>单位：秒</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLineEdit" name="leProjectName">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblog">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>日志路径：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>秒</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QLineEdit" name="leLineId">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>程序自动关闭时长：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>线体：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="leHostPort">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="leCheck">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>单位：小时</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="lbcheck">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>点检时长：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pbLogPath">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>选择路径</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="lb_ip">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>本机IP：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lbCheckTime">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>点检时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="2">
+      <widget class="QLineEdit" name="leWorkArea">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>车间：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lbData">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>数据路径：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>吸嘴使用报警次数：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="2">
+      <widget class="QLineEdit" name="leNozzle">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>521</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+    </font>
+   </property>
+   <property name="title">
+    <string>测试设置</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="lbLimit">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>测试上限：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leUpperLimit">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblow">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>测试下限：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leLowerLimit">
+       <property name="font">
+        <font>
+         <family>华文中宋</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

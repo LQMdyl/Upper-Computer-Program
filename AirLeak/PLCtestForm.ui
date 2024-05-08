@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlcTestForm</class>
+ <widget class="QWidget" name="PlcTestForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>plc测试窗口</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>379</width>
+     <height>169</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+    </font>
+   </property>
+   <property name="title">
+    <string>PLC</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>351</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbPlcAddress">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>线圈地址：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbPlcholdaddress">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>保持寄存器地址：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lePlcHold">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lePlcColi"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbValue">
+         <property name="text">
+          <string>写入值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leWrite"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pbtCoilRead">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>读取线圈</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtColiWrite">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>写入线圈</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtHoldRead">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>读取寄存器</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbtHoldWrite">
+         <property name="font">
+          <font>
+           <family>华文中宋</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>写入寄存器</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>381</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
