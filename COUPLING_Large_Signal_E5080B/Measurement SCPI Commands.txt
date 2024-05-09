@@ -1,0 +1,22 @@
+
+#添加一个新的测量项, 测量类型为RMS
+:MEASUrement:MEAS1:TYPE RMS
+#测量项的源设为通道一
+:MEASUrement:MEAS1:SOURCE CH1
+
+#打开光标
+DISplay:WAVEView1:CURSor:CURSOR1:STATE 1
+#设置A光标位置，单位为秒，如1.2E-03 代表-1.2ms
+DISPLAY:WAVEVIEW1:CURSOR:CURSOR1:VBARS:APOSITION -1.2E-03
+#设置B光标位置
+DISPLAY:WAVEVIEW1:CURSOR:CURSOR1:VBARS:BPOSITION 1.2E-03
+#回读设置的光标位置
+#DISplay:WAVEView1:CURSor:CURSOR1:VBArs:APOSition?
+
+#测量项选通设为“光标”
+MEASUrement:GATing CURSOR
+
+#读取测量项结果（所有统计样本中的均值）
+MEASUrement:MEAS1:RESUlts:ALLAcqs:MEAN?
+#读取测量项结果（当前样本值）
+#MEASUrement:MEAS1:RESUlts:CURRentacq:MEAN?
